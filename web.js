@@ -8,7 +8,7 @@ var mybuffer = new Buffer(fs.readFileSync(filename));
 var msgstr;
 
 mybuffer = fs.readFileSync(filename);
-mystring = mybuffer.toString();
+msgstr= mybuffer.toString();
 
 app.get('/', function(request, response) {
   response.send(msgstr);
